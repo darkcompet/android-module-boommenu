@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tool.compet.boommenu.DkTextItemView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:clickable="true"
+	android:focusable="true">
+
+	<ImageView
+		android:id="@+id/ivIcon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		android:padding="16dp"
+		android:layout_margin="0dp"
+		android:contentDescription="@null"
+		android:src="@android:drawable/ic_delete"
+		app:tint="@android:color/white" />
+
+	<TextView
+		android:id="@+id/tvText"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		app:layout_constraintStart_toStartOf="@id/ivIcon"
+		app:layout_constraintEnd_toEndOf="@id/ivIcon"
+		app:layout_constraintBottom_toBottomOf="@id/ivIcon"
+		android:textColor="@android:color/white"
+		android:gravity="center"
+		android:paddingLeft="2dp"
+		android:paddingRight="2dp"
+		android:layout_margin="0dp"
+		android:singleLine="true"
+		android:ellipsize="marquee"
+		android:scrollHorizontally="true"
+		android:marqueeRepeatLimit="marquee_forever" />
+
+</tool.compet.boommenu.DkTextItemView>
