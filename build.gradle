@@ -4,6 +4,8 @@ plugins {
 }
 
 android {
+	namespace 'tool.compet.boommenu'
+
 	compileSdk 31
 
 	defaultConfig {
